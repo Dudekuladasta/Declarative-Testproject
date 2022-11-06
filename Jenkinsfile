@@ -8,5 +8,12 @@ pipeline {
                 """
             }
         }
+         stage('Build project') {
+            steps {
+                sh """
+                echo 'Hello, This is build project'
+                """
+            }
+        }
     }
 }
